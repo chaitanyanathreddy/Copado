@@ -152,55 +152,24 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Employement_website__c</fullName>
+        <fullName>Web_Address__c</fullName>
         <externalId>false</externalId>
-        <label>Employement website</label>
-        <referenceTo>Employement_website__c</referenceTo>
-        <relationshipLabel>Positions</relationshipLabel>
-        <relationshipName>Job_Postings</relationshipName>
-        <relationshipOrder>1</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
-        <fullName>Position__c</fullName>
-        <externalId>false</externalId>
-        <label>Position</label>
-        <referenceTo>Position__c</referenceTo>
-        <relationshipLabel>Employement websites</relationshipLabel>
-        <relationshipName>Job_Postings</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
-        <fullName>Price_per_post__c</fullName>
-        <externalId>false</externalId>
-        <label>Price per post</label>
-        <precision>5</precision>
+        <label>Web Address</label>
         <required>false</required>
-        <scale>0</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Currency</type>
+        <type>Url</type>
     </fields>
-    <label>Job Posting</label>
+    <label>Employement website</label>
     <nameField>
-        <displayFormat>JP-{0000}</displayFormat>
-        <label>Job Posting No</label>
+        <label>Employement website Name</label>
         <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
+        <type>Text</type>
     </nameField>
-    <pluralLabel>Job Postings</pluralLabel>
+    <pluralLabel>Employement websites</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

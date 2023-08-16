@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Position</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Positions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Apex --></label>
+        <name>Apex__c</name>
+    </fields>
+    <fields>
+        <label><!-- C# --></label>
+        <name>C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Educational Requirements --></label>
+        <name>Educational_Requirements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Functional Area --></label>
+        <name>Functional_Area__c</name>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Resources</masterLabel>
+            <translation><!-- Human Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Technology</masterLabel>
+            <translation><!-- Information Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Operations</masterLabel>
+            <translation><!-- Retail Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehousing</masterLabel>
+            <translation><!-- Warehousing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hire By --></label>
+        <name>Hire_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hiring Manager Email --></label>
+        <name>Hiring_Manager_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hiring Manager --></label>
+        <name>Hiring_Manager__c</name>
+        <relationshipLabel><!-- Positions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Icon image --></label>
+        <name>Icon_image__c</name>
+    </fields>
+    <fields>
+        <label><!-- JavaScript --></label>
+        <name>JavaScript__c</name>
+    </fields>
+    <fields>
+        <label><!-- Java --></label>
+        <name>Java__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Description --></label>
+        <name>Job_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <picklistValues>
+            <masterLabel>Mumbai, India</masterLabel>
+            <translation><!-- Mumbai, India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NewYork,NY</masterLabel>
+            <translation><!-- NewYork,NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Francisco, CA</masterLabel>
+            <translation><!-- San Francisco, CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tokyo, Japan</masterLabel>
+            <translation><!-- Tokyo, Japan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Max Pay --></label>
+        <name>Max_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Pay --></label>
+        <name>Min_Pay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Date --></label>
+        <name>Open_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Responsibilities --></label>
+        <name>Responsibilities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills Required --></label>
+        <name>Skills_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed - Canceled</masterLabel>
+            <translation><!-- Closed - Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Filled</masterLabel>
+            <translation><!-- Closed - Filled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed - Not Approved</masterLabel>
+            <translation><!-- Closed - Not Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Position</masterLabel>
+            <translation><!-- New Position --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open - Approved</masterLabel>
+            <translation><!-- Open - Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Travel Required --></label>
+        <name>Travel_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation><!-- Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Time</masterLabel>
+            <translation><!-- Full Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internship</masterLabel>
+            <translation><!-- Internship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part Time</masterLabel>
+            <translation><!-- Part Time --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If open date is equals or greater than closed date change the values in date field --></errorMessage>
+        <name>Date_Validation_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the status is closed cancelled, closed date mandatory in terms creating record. --></errorMessage>
+        <name>Project_status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Max Pay cannot be more than 1 million --></errorMessage>
+        <name>Salary_Max</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Min pay cannot be more than Max pay. Please the the data given --></errorMessage>
+        <name>Salary_terms</name>
+    </validationRules>
+</CustomObjectTranslation>

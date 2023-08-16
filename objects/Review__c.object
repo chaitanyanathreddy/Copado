@@ -154,52 +154,62 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>Employement_website__c</fullName>
+        <fullName>Interviewer_Comments_Feedback__c</fullName>
         <externalId>false</externalId>
-        <label>Employement website</label>
-        <referenceTo>Employement_website__c</referenceTo>
-        <relationshipLabel>Positions</relationshipLabel>
-        <relationshipName>Job_Postings</relationshipName>
-        <relationshipOrder>1</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <label>Interviewer Comments/Feedback</label>
+        <length>32768</length>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
     </fields>
     <fields>
-        <fullName>Position__c</fullName>
+        <fullName>Interviewer_name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Position</label>
-        <referenceTo>Position__c</referenceTo>
-        <relationshipLabel>Employement websites</relationshipLabel>
-        <relationshipName>Job_Postings</relationshipName>
+        <label>Interviewer name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipLabel>Reviews</relationshipLabel>
+        <relationshipName>Reviews</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Job_Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Application</label>
+        <referenceTo>Job_Application__c</referenceTo>
+        <relationshipLabel>Reviews</relationshipLabel>
+        <relationshipName>Reviews</relationshipName>
         <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <fields>
-        <fullName>Price_per_post__c</fullName>
+        <fullName>Rating__c</fullName>
         <externalId>false</externalId>
-        <label>Price per post</label>
-        <precision>5</precision>
+        <label>Rating</label>
+        <precision>2</precision>
         <required>false</required>
         <scale>0</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Currency</type>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
-    <label>Job Posting</label>
+    <label>Review</label>
     <nameField>
-        <displayFormat>JP-{0000}</displayFormat>
-        <label>Job Posting No</label>
+        <displayFormat>R-{0000}</displayFormat>
+        <label>Review  No</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Job Postings</pluralLabel>
+    <pluralLabel>Reviews</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
